@@ -1,0 +1,220 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.app {
+  background-color: #e3ffe3;
+  padding: 30px;
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    background-color: #869686;
+    margin-bottom: 10px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    @media(max-width:750px){
+        font-size: 16px;
+        width: 70%;
+        
+    }
+  }
+}
+.app {
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @media(max-width:750px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .button {
+      display: flex;
+      gap: 10px;
+      @media(max-width:420px){
+          font-size: 12px;
+          gap: 3px;
+
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        width: 70px;
+        background-color: #8fff8f;
+        border: 1px solid transparent;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        @media(max-width:420px){
+            font-size: 10px;
+        }
+      }
+    }
+  }
+}
+.buttons {
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8fff8f;
+    padding: 5px 15px;
+    border-radius: 10px;
+    gap: 5px;
+    cursor: pointer;
+    @media(max-width:420px){
+        font-size: 14px;
+    }
+    select{
+        width: 120px;
+        @media(max-width:420px){
+            width: 60px;
+        }
+    }
+  }
+}
+.app {
+  .countryList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    li {
+      display: flex;
+      flex-direction: column;
+      background-color: #ccffcc;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      h2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-self: center;
+        padding: 3px;
+        line-height: 1.2em;
+        margin-bottom: 3px;
+        font-size: 16px;
+        background-color: #869686;
+        width: 450px;
+        @media(max-width:750px){
+            width: 100%;
+        }
+      }
+      p {
+        margin-bottom: 3px;
+        line-height: 1.2em;
+        padding: 3px;
+        font-size: 13px;
+        background-color: #869686;
+        width: 150px;
+        @media(max-width:750px){
+            width: 100%;
+        }
+      }
+      p:last-of-type{
+          width: 250px;
+          @media(max-width:750px){
+            width: 100%;
+        }
+      }
+      
+    }
+  }
+}
+.app {
+  .pigination {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    .page{
+      background-color: red;
+      height: 25px;
+      width: 25px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #869686;
+        color: black;
+        font-weight: 600;
+      }
+    }
+    .li {
+      background-color: #8fff8f;
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #869686;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #869686;
+      }
+    }
+  }
+}
+// .app{
+//   .page {
+//     background-color: red;
+//   }
+// }
+.app {
+  .pagination {
+    
+    display: flex;
+    justify-content: center;
+    
+    list-style: none;
+    outline: none;
+   }
+    
+   .pagination>.active>a {
+    background-color:  #869686;
+    color: #fff;
+   }
+    
+   .pagination>li>a {
+    border: 1px solid #869686;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+   }
+    
+   .pagination>li>a, .pagination>li>span {
+    color:  #869686;
+    background-color: azure;
+   }
+}
